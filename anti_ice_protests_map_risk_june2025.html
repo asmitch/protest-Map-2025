@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8bcab87b764554bfba88bc2e9e9dfc05 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8bcab87b764554bfba88bc2e9e9dfc05" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8bcab87b764554bfba88bc2e9e9dfc05 = L.map(
+                "map_8bcab87b764554bfba88bc2e9e9dfc05",
+                {
+                    center: [39.5, -98.35],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8865ff6e02f0a8f426b64cd28b52ede4 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8bcab87b764554bfba88bc2e9e9dfc05);
+        
+    
+            var marker_abbe74f04b3992bd6b7a36a03c793622 = L.marker(
+                [34.0522, -118.2437],
+                {}
+            ).addTo(map_8bcab87b764554bfba88bc2e9e9dfc05);
+        
+    
+            var icon_64108495371fb6163677bf9bd161aacb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_abbe74f04b3992bd6b7a36a03c793622.setIcon(icon_64108495371fb6163677bf9bd161aacb);
+        
+    
+        var popup_ee1cb9267e3773497a5c093d3e268c37 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d1cfe57dff85a76cd186e1608f63347 = $(`<div id="html_5d1cfe57dff85a76cd186e1608f63347" style="width: 100.0%; height: 100.0%;"><b>Los Angeles, CA</b><br>Clashes, National Guard deployed, DSA/PSL active<br><b>Risk:</b> High</div>`)[0];
+            popup_ee1cb9267e3773497a5c093d3e268c37.setContent(html_5d1cfe57dff85a76cd186e1608f63347);
+        
+
+        marker_abbe74f04b3992bd6b7a36a03c793622.bindPopup(popup_ee1cb9267e3773497a5c093d3e268c37)
+        ;
+
+        
+    
+    
+            marker_abbe74f04b3992bd6b7a36a03c793622.bindTooltip(
+                `<div>
+                     Los Angeles, CA - High Risk
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c70917c2ccd063cf6968f50889989c83 = L.marker(
+                [37.7749, -122.4194],
+                {}
+            ).addTo(map_8bcab87b764554bfba88bc2e9e9dfc05);
+        
+    
+            var icon_0548092da26b9d74b0043dde56b7e309 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c70917c2ccd063cf6968f50889989c83.setIcon(icon_0548092da26b9d74b0043dde56b7e309);
+        
+    
+        var popup_27398fc5c641efd95b62be3b7f38ee61 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7ade9fa86909dabdd0303d74a30fdd89 = $(`<div id="html_7ade9fa86909dabdd0303d74a30fdd89" style="width: 100.0%; height: 100.0%;"><b>San Francisco, CA</b><br>60 arrests, vandalism<br><b>Risk:</b> Moderate</div>`)[0];
+            popup_27398fc5c641efd95b62be3b7f38ee61.setContent(html_7ade9fa86909dabdd0303d74a30fdd89);
+        
+
+        marker_c70917c2ccd063cf6968f50889989c83.bindPopup(popup_27398fc5c641efd95b62be3b7f38ee61)
+        ;
+
+        
+    
+    
+            marker_c70917c2ccd063cf6968f50889989c83.bindTooltip(
+                `<div>
+                     San Francisco, CA - Moderate Risk
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_abc4708165ce48ca87075e33a463a899 = L.marker(
+                [34.1478, -118.1445],
+                {}
+            ).addTo(map_8bcab87b764554bfba88bc2e9e9dfc05);
+        
+    
+            var icon_a57dcbae7c4f95f9760a1646c2c8006a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_abc4708165ce48ca87075e33a463a899.setIcon(icon_a57dcbae7c4f95f9760a1646c2c8006a);
+        
+    
+        var popup_195586db7a048dc4525976013e3f50ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_05ee8cd550e4381a36977fade4f17654 = $(`<div id="html_05ee8cd550e4381a36977fade4f17654" style="width: 100.0%; height: 100.0%;"><b>Pasadena, CA</b><br>Peaceful community protest<br><b>Risk:</b> Low</div>`)[0];
+            popup_195586db7a048dc4525976013e3f50ee.setContent(html_05ee8cd550e4381a36977fade4f17654);
+        
+
+        marker_abc4708165ce48ca87075e33a463a899.bindPopup(popup_195586db7a048dc4525976013e3f50ee)
+        ;
+
+        
+    
+    
+            marker_abc4708165ce48ca87075e33a463a899.bindTooltip(
+                `<div>
+                     Pasadena, CA - Low Risk
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fb8a013a06c24bdd7a0040682370448b = L.marker(
+                [33.8895, -118.1598],
+                {}
+            ).addTo(map_8bcab87b764554bfba88bc2e9e9dfc05);
+        
+    
+            var icon_165e6c47c83ec538ee1ea0882059a0f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_fb8a013a06c24bdd7a0040682370448b.setIcon(icon_165e6c47c83ec538ee1ea0882059a0f3);
+        
+    
+        var popup_4fa716f7bdaba64aa4337e79fe85ea09 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c33358c8333d785f323dc05f4042b8e0 = $(`<div id="html_c33358c8333d785f323dc05f4042b8e0" style="width: 100.0%; height: 100.0%;"><b>Paramount, CA</b><br>Tied to LA unrest, National Guard reported<br><b>Risk:</b> Moderate</div>`)[0];
+            popup_4fa716f7bdaba64aa4337e79fe85ea09.setContent(html_c33358c8333d785f323dc05f4042b8e0);
+        
+
+        marker_fb8a013a06c24bdd7a0040682370448b.bindPopup(popup_4fa716f7bdaba64aa4337e79fe85ea09)
+        ;
+
+        
+    
+    
+            marker_fb8a013a06c24bdd7a0040682370448b.bindTooltip(
+                `<div>
+                     Paramount, CA - Moderate Risk
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4b24ba75efc92fce12bf1acf4d50d055 = L.marker(
+                [27.9506, -82.4572],
+                {}
+            ).addTo(map_8bcab87b764554bfba88bc2e9e9dfc05);
+        
+    
+            var icon_21ac0d07db01afcf8f3621a510a41e37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4b24ba75efc92fce12bf1acf4d50d055.setIcon(icon_21ac0d07db01afcf8f3621a510a41e37);
+        
+    
+        var popup_a25c700727ddef8b2078a1c73ca42e9a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_580e9aaa2ff97a490859b0859db834b2 = $(`<div id="html_580e9aaa2ff97a490859b0859db834b2" style="width: 100.0%; height: 100.0%;"><b>Tampa, FL</b><br>Voices of Florida rally, June 9–10<br><b>Risk:</b> Moderate</div>`)[0];
+            popup_a25c700727ddef8b2078a1c73ca42e9a.setContent(html_580e9aaa2ff97a490859b0859db834b2);
+        
+
+        marker_4b24ba75efc92fce12bf1acf4d50d055.bindPopup(popup_a25c700727ddef8b2078a1c73ca42e9a)
+        ;
+
+        
+    
+    
+            marker_4b24ba75efc92fce12bf1acf4d50d055.bindTooltip(
+                `<div>
+                     Tampa, FL - Moderate Risk
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87375bfa4d92d51b4a73abf3b14c3a68 = L.marker(
+                [41.8781, -87.6298],
+                {}
+            ).addTo(map_8bcab87b764554bfba88bc2e9e9dfc05);
+        
+    
+            var icon_ec3fe5556d44a2a2085a6c3749eccad7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_87375bfa4d92d51b4a73abf3b14c3a68.setIcon(icon_ec3fe5556d44a2a2085a6c3749eccad7);
+        
+    
+        var popup_3617e2cc30aa9de1fe988712785e7b03 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2242e2825e6a02e3c58ad3dfada3302f = $(`<div id="html_2242e2825e6a02e3c58ad3dfada3302f" style="width: 100.0%; height: 100.0%;"><b>Chicago, IL</b><br>PSL-led rally in Pilsen neighborhood<br><b>Risk:</b> Moderate</div>`)[0];
+            popup_3617e2cc30aa9de1fe988712785e7b03.setContent(html_2242e2825e6a02e3c58ad3dfada3302f);
+        
+
+        marker_87375bfa4d92d51b4a73abf3b14c3a68.bindPopup(popup_3617e2cc30aa9de1fe988712785e7b03)
+        ;
+
+        
+    
+    
+            marker_87375bfa4d92d51b4a73abf3b14c3a68.bindTooltip(
+                `<div>
+                     Chicago, IL - Moderate Risk
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_964c44b76051dab12fed661e04887c7a = L.marker(
+                [39.9612, -82.9988],
+                {}
+            ).addTo(map_8bcab87b764554bfba88bc2e9e9dfc05);
+        
+    
+            var icon_9c36c99866728d8ea869b02874b6021a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_964c44b76051dab12fed661e04887c7a.setIcon(icon_9c36c99866728d8ea869b02874b6021a);
+        
+    
+        var popup_cd7961d7af9468494e81d38f794815ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_454d6fc537e3488d00c9ced2f588f9ea = $(`<div id="html_454d6fc537e3488d00c9ced2f588f9ea" style="width: 100.0%; height: 100.0%;"><b>Columbus, OH</b><br>PSL protest, June 10, 6PM, City Hall<br><b>Risk:</b> Low</div>`)[0];
+            popup_cd7961d7af9468494e81d38f794815ce.setContent(html_454d6fc537e3488d00c9ced2f588f9ea);
+        
+
+        marker_964c44b76051dab12fed661e04887c7a.bindPopup(popup_cd7961d7af9468494e81d38f794815ce)
+        ;
+
+        
+    
+    
+            marker_964c44b76051dab12fed661e04887c7a.bindTooltip(
+                `<div>
+                     Columbus, OH - Low Risk
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd7daf6776ba855283d2afa3c17da676 = L.marker(
+                [38.9072, -77.0369],
+                {}
+            ).addTo(map_8bcab87b764554bfba88bc2e9e9dfc05);
+        
+    
+            var icon_a3d1d6174ed5d56427b371bc6d75816b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_dd7daf6776ba855283d2afa3c17da676.setIcon(icon_a3d1d6174ed5d56427b371bc6d75816b);
+        
+    
+        var popup_e0b765c3475989b353de52ccaeac7b65 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_176a3001aa6d095433527a332c905944 = $(`<div id="html_176a3001aa6d095433527a332c905944" style="width: 100.0%; height: 100.0%;"><b>Washington, D.C., DC</b><br>Unconfirmed X reports of protest<br><b>Risk:</b> Low</div>`)[0];
+            popup_e0b765c3475989b353de52ccaeac7b65.setContent(html_176a3001aa6d095433527a332c905944);
+        
+
+        marker_dd7daf6776ba855283d2afa3c17da676.bindPopup(popup_e0b765c3475989b353de52ccaeac7b65)
+        ;
+
+        
+    
+    
+            marker_dd7daf6776ba855283d2afa3c17da676.bindTooltip(
+                `<div>
+                     Washington, D.C., DC - Low Risk
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_64d9d18d6477430d5abcaf6570649a0d = L.marker(
+                [40.7128, -74.006],
+                {}
+            ).addTo(map_8bcab87b764554bfba88bc2e9e9dfc05);
+        
+    
+            var icon_2a2a87c2c4dbf6eb41d965aaebe68e25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_64d9d18d6477430d5abcaf6570649a0d.setIcon(icon_2a2a87c2c4dbf6eb41d965aaebe68e25);
+        
+    
+        var popup_c4b2ddcf11dfabf41333eb707fceae93 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a83ce4d242409d2c8c7f308dc291db3 = $(`<div id="html_6a83ce4d242409d2c8c7f308dc291db3" style="width: 100.0%; height: 100.0%;"><b>New York City, NY</b><br>SEIU rally, blocked ICE van<br><b>Risk:</b> Moderate</div>`)[0];
+            popup_c4b2ddcf11dfabf41333eb707fceae93.setContent(html_6a83ce4d242409d2c8c7f308dc291db3);
+        
+
+        marker_64d9d18d6477430d5abcaf6570649a0d.bindPopup(popup_c4b2ddcf11dfabf41333eb707fceae93)
+        ;
+
+        
+    
+    
+            marker_64d9d18d6477430d5abcaf6570649a0d.bindTooltip(
+                `<div>
+                     New York City, NY - Moderate Risk
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
